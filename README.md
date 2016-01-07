@@ -22,3 +22,8 @@ fill `config.json` as follow (exclude commments) and run `python ./teebot.py`
 * `.tee server`: get server info
 * `.tee player <playername>`: get player info
 * `.tee help`: get help message
+
+### LICENSE
+MIT
+
+**FOR `teeserver.py`:** CC BY-NC-SA 3.0
