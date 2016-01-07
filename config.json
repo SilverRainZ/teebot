@@ -1,0 +1,9 @@
+{
+    "irc_host": "ip or domian name of irc server",
+    "irc_port": 6666,
+    "irc_channels": ["a list of irc channels you want this bot join in", "..."],
+    "irc_nick": "teebot",
+    "tee_server": "ip of the teeworlds server",
+    "tee_alias": "alias of teeworlds server",
+    "tee_port": 8303
+}
