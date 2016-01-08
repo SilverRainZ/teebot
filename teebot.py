@@ -9,7 +9,7 @@ def players_list(srv):
             srv.cur_player_num,
             srv.max_player_num,
             srv.alias,
-            ', '.join([ p['name'] for p in srv.players])
+            ', '.join([ '{0}({1})'.format(p['name'], p['score']) for p in srv.players])
             )
 
 
@@ -27,9 +27,11 @@ def player_info(srv, name):
 
 
 def server_info(srv):
-    return '{0}, version: {1}, gamemode: {2}, map: {3}, players: {4}/{5}'.format(
+    return '{0}, version: {1}, address: {2}:{3} gamemode: {4}, map: {5}, players: {6}/{7}'.format(
             srv.name,
             srv.version,
+            srv.ip,
+            srv.port,
             srv.mode,
             srv.map_name,
             srv.cur_player_num,

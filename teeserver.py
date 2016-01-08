@@ -72,6 +72,8 @@ region_map = {
 
 class teeserver:
     sock = None
+    ip = ''
+    port = 0
     version = ''
     name = ''
     alias = ''
@@ -86,6 +88,8 @@ class teeserver:
         self.sock.connect((server, port))
         self.sock.settimeout(5)
         self.alias = alias
+        self.ip = server
+        self.port = port
         print('[teeserver]', 'connect to {0}:{1}'.format(server, port))
 
 
